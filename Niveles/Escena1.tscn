@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Niveles/Tilenieve.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Recursos F1001B - ICT/Recursos F1001B - ICT/Backgrounds/Cielo Azul.png" type="Texture" id=2]
+[ext_resource path="res://Recursos F1001B - ICT/Recursos F1001B - ICT/Objetos/Sol.png" type="Texture" id=3]
+[ext_resource path="res://Recursos F1001B - ICT/Recursos F1001B - ICT/Objetos/Roca.png" type="Texture" id=4]
+[ext_resource path="res://Recursos F1001B - ICT/Recursos F1001B - ICT/Objetos/Agua.png" type="Texture" id=5]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CieloAzul" type="Sprite" parent="."]
+position = Vector2( 286, 39 )
+scale = Vector2( 9.76563, 7.40625 )
+texture = ExtResource( 2 )
+
+[node name="Agua" type="Sprite" parent="CieloAzul"]
+position = Vector2( 10.24, 28.3544 )
+texture = ExtResource( 5 )
+
+[node name="Roca" type="Sprite" parent="CieloAzul"]
+position = Vector2( -17.6128, 4.99578 )
+scale = Vector2( 0.2944, 0.196202 )
+texture = ExtResource( 4 )
+
+[node name="Sol" type="Sprite" parent="CieloAzul"]
+position = Vector2( 19.7632, -24.5738 )
+scale = Vector2( 0.548, 0.685654 )
+texture = ExtResource( 3 )
+
+[node name="TileMap" parent="." instance=ExtResource( 1 )]
+position = Vector2( 30, 57 )

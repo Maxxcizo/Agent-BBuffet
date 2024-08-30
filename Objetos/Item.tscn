@@ -1,0 +1,62 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Recursos F1001B - ICT/Recursos F1001B - ICT/Objetos/Manzana.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/Item.gd" type="Script" id=2]
+
+[sub_resource type="CircleShape2D" id=3]
+radius = 3.0
+
+[sub_resource type="Animation" id=1]
+resource_name = "Item"
+length = 0.8
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Manzana:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 0, 1 ]
+}
+
+[sub_resource type="Animation" id=2]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Manzana:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0 ]
+}
+
+[node name="Item" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 37, 21 )
+shape = SubResource( 3 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Area2D"]
+anims/Item = SubResource( 1 )
+anims/RESET = SubResource( 2 )
+
+[node name="Manzana" type="Sprite" parent="Area2D"]
+position = Vector2( 37, 21.5 )
+scale = Vector2( 0.375, 0.34375 )
+texture = ExtResource( 1 )
+hframes = 2
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]
