@@ -14,13 +14,21 @@ dest_files=[ "res://.import/Rana.png-87ecf7c2187d4c5f9ac94348fe6035a6.stex" ]
 
 [params]
 
+<<<<<<< HEAD
 compress/mode=0
+=======
+compress/mode=3
+>>>>>>> f1c08a5661280dd305b3535004790c611aaf99ab
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
+<<<<<<< HEAD
 flags/filter=true
+=======
+flags/filter=false
+>>>>>>> f1c08a5661280dd305b3535004790c611aaf99ab
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

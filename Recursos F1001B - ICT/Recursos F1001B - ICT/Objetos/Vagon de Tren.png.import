@@ -14,13 +14,21 @@ dest_files=[ "res://.import/Vagon de Tren.png-a28960a86a91a53fc52b0cce11897f38.s
 
 [params]
 
+<<<<<<< HEAD
 compress/mode=3
+=======
+compress/mode=0
+>>>>>>> f1c08a5661280dd305b3535004790c611aaf99ab
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
+<<<<<<< HEAD
 flags/filter=false
+=======
+flags/filter=true
+>>>>>>> f1c08a5661280dd305b3535004790c611aaf99ab
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

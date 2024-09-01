@@ -10,8 +10,13 @@ config_version=4
 
 [application]
 
+<<<<<<< HEAD
 config/name="Prueba 3"
 run/main_scene="res://Niveles/Escena1.tscn"
+=======
+config/name="Juego-F1001B-ICT"
+run/main_scene="res://Objetos/Niveles/Mundo1.tscn"
+>>>>>>> f1c08a5661280dd305b3535004790c611aaf99ab
 config/icon="res://icon.png"
 
 [gui]
